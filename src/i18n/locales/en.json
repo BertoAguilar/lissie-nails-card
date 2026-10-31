@@ -1,0 +1,33 @@
+{
+  "tagline": "Learning is an art.",
+  "actions": {
+    "sectionLabel": "Contact",
+    "book": "Book an appointment",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "instagram": "Instagram",
+    "directions": "Directions",
+    "reviews": "Google reviews",
+    "saveContact": "Save contact"
+  },
+  "hours": {
+    "title": "Hours",
+    "closed": "closed",
+    "days": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    }
+  },
+  "gallery": {
+    "title": "Our work",
+    "photoAlt": "Nail work {{number}}"
+  },
+  "language": {
+    "label": "Language"
+  }
+}

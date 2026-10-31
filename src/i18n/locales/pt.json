@@ -1,0 +1,33 @@
+{
+  "tagline": "Aprender é uma arte.",
+  "actions": {
+    "sectionLabel": "Contato",
+    "book": "Agendar um horário",
+    "whatsapp": "WhatsApp",
+    "call": "Ligar",
+    "instagram": "Instagram",
+    "directions": "Como chegar",
+    "reviews": "Avaliações no Google",
+    "saveContact": "Salvar contato"
+  },
+  "hours": {
+    "title": "Horário",
+    "closed": "fechado",
+    "days": {
+      "mon": "Segunda",
+      "tue": "Terça",
+      "wed": "Quarta",
+      "thu": "Quinta",
+      "fri": "Sexta",
+      "sat": "Sábado",
+      "sun": "Domingo"
+    }
+  },
+  "gallery": {
+    "title": "Nosso trabalho",
+    "photoAlt": "Trabalho de unhas {{number}}"
+  },
+  "language": {
+    "label": "Idioma"
+  }
+}
