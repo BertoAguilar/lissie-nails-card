@@ -21,7 +21,7 @@
 }
 
 .card-page__logo {
-  border-radius: var(--radius-pill);
+  width: auto;
   margin-bottom: var(--space-2);
 }
 
