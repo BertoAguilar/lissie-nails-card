@@ -22,15 +22,6 @@ function foldLine(line) {
 
 export function buildVCard(business, photoBase64Png) {
   const { name, phoneE164, website, instagramUrl, address } = business
-  const addressLine = [
-    '',
-    '',
-    escapeField(address.line1 + (address.line2 ? ', ' + address.line2 : '')),
-    escapeField(address.city),
-    escapeField(address.region),
-    escapeField(address.postalCode),
-    escapeField(address.country),
-  ].join(';')
 
   const lines = [
     'BEGIN:VCARD',
@@ -41,8 +32,20 @@ export function buildVCard(business, photoBase64Png) {
     `TEL;TYPE=CELL,VOICE:${phoneE164}`,
     `URL:${website}`,
     `URL;TYPE=Instagram:${instagramUrl}`,
-    `ADR;TYPE=WORK:${addressLine}`,
   ]
+
+  if (address) {
+    const addressLine = [
+      '',
+      '',
+      escapeField(address.line1 + (address.line2 ? ', ' + address.line2 : '')),
+      escapeField(address.city),
+      escapeField(address.region),
+      escapeField(address.postalCode),
+      escapeField(address.country),
+    ].join(';')
+    lines.push(`ADR;TYPE=WORK:${addressLine}`)
+  }
 
   if (photoBase64Png) {
     lines.push(`PHOTO;ENCODING=b;TYPE=PNG:${photoBase64Png}`)
