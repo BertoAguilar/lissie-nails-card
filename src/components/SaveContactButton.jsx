@@ -2,7 +2,7 @@ import { Contact } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { business } from "../config/business";
 import { downloadVCard } from "../utils/vcard";
-import logoPng from "../assets/brand/simbolo_verde.png";
+import logoPng from "../assets/brand/Simbolo_verde.png";
 import ActionButton from "./ActionButton";
 
 export default function SaveContactButton() {
