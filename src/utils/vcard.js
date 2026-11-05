@@ -21,7 +21,7 @@ function foldLine(line) {
 }
 
 export function buildVCard(business, photoBase64Png) {
-  const { name, phoneE164, website, instagramUrl, address } = business
+  const { name, phoneE164, website, instagramUrl, squareBookingUrl, address } = business
 
   const lines = [
     'BEGIN:VCARD',
@@ -32,6 +32,7 @@ export function buildVCard(business, photoBase64Png) {
     `TEL;TYPE=CELL,VOICE:${phoneE164}`,
     `URL:${website}`,
     `URL;TYPE=Instagram:${instagramUrl}`,
+    `URL;TYPE=Booking:${squareBookingUrl}`,
   ]
 
   if (address) {
