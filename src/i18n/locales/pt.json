@@ -3,6 +3,7 @@
   "actions": {
     "sectionLabel": "Contato",
     "book": "Agendar um horário",
+    "services": "Serviços e preços",
     "whatsapp": "WhatsApp",
     "call": "Ligar",
     "instagram": "Instagram",
@@ -26,6 +27,12 @@
   "gallery": {
     "title": "Meu trabalho",
     "photoAlt": "Trabalho de unhas {{number}}"
+  },
+  "services": {
+    "title": "Serviços"
+  },
+  "nav": {
+    "back": "Voltar"
   },
   "language": {
     "label": "Idioma"

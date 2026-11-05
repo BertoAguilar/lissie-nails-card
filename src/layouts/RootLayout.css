@@ -6,6 +6,32 @@
 
 .root-layout__header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: var(--space-5) var(--space-4) 0;
+}
+
+.root-layout__header--home {
+  justify-content: center;
+}
+
+.root-layout__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  transition: background-color 0.2s ease;
+}
+
+.root-layout__back:hover {
+  background: var(--pebble-tint-2);
+}
+
+.root-layout__back svg {
+  width: 1.1rem;
+  height: 1.1rem;
 }

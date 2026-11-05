@@ -1,5 +1,6 @@
 import {
   Calendar,
+  Tag,
   MessageCircle,
   Phone,
   AtSign,
@@ -30,6 +31,8 @@ export default function CardPage() {
         href={business.squareBookingUrl}
         variant="primary"
       />
+
+      <ActionButton icon={Tag} label={t("actions.services")} to="/services" />
 
       <nav
         className="card-page__actions"

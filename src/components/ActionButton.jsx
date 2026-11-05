@@ -1,7 +1,17 @@
+import { Link } from 'react-router-dom'
 import './ActionButton.css'
 
-export default function ActionButton({ icon: Icon, label, href, onClick, variant = 'default' }) {
+export default function ActionButton({ icon: Icon, label, href, to, onClick, variant = 'default' }) {
   const className = `action-button action-button--${variant}`
+
+  if (to) {
+    return (
+      <Link className={className} to={to}>
+        <Icon className="action-button__icon" aria-hidden="true" strokeWidth={1.5} />
+        <span>{label}</span>
+      </Link>
+    )
+  }
 
   if (href) {
     const isExternal = href.startsWith('http')

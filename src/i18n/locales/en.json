@@ -3,6 +3,7 @@
   "actions": {
     "sectionLabel": "Contact",
     "book": "Book an appointment",
+    "services": "Services & pricing",
     "whatsapp": "WhatsApp",
     "call": "Call",
     "instagram": "Instagram",
@@ -26,6 +27,12 @@
   "gallery": {
     "title": "My work",
     "photoAlt": "Nail work {{number}}"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "nav": {
+    "back": "Back"
   },
   "language": {
     "label": "Language"
